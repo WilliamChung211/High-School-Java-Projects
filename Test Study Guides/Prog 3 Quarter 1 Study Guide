@@ -1,0 +1,36 @@
+Will's AMAZING STUDY GUIDE
+
+Data Structures Intro:
+	
+	Interface: Abstract methods for disguising purposes. (We can extend from these)
+	Collection: Interface representing a group of elements.
+	List: A group of elements with an order with indexes. It is a sub interface to the collection interface.
+	ArrayList: Array that changes sizes. A downside is that to add or remove something, you always have to slide. It implements List.
+	LinkedList: List with nodes that also implements List interface. Adding or deleting to the front is faster here than an ArrayList.
+	DoublyLinkedList: A linked list that keeps track of end and with nodes that have a previous instance variable,
+	Inner class: Its purpose is when you need to write a class, but you only want one class( the outer class to use it). The outer class
+	has access to all the instance variables and methods the inner class has.
+
+Iterators Review: 
+
+	Iterator: Something that keeps track of a spot and can traverse. Better than the get method because the get method has traverse from
+	the beginning to the desired spot each time it is called, while the iterator can just slide by 1. 
+	Iterable Interface: All iterators must implement this and must have remove, hasNext, and Next. Throws NoSuchElement exception is goes out of bounds
+	Anonymous Classes: Use them instead of inner classes if you only use them once.
+	ListIterator: An iterator that now has hasPrevious, previous, add, and set. Illegal state exceptions for remove and set
+	
+Different LinkedLists:
+
+	Dummy Nodes: They are header and trailer nodes that point to null. They will always be there. The good is that we do not need to
+	worry about special cases. The bad is that it takes up memory.
+	Circularly LinkedList: A list that has end's next instance variable point to the front. The good is there is only one instance
+	variable that reaches front and end instantaneous regardless of #s
+	Doubly Circularly LinkedList: A circular linked list that has a node with the previous and next.
+	
+Restrictive Data Structures:
+	
+	Stack (LIFO): A data structure that only access to its top with no method for traversal.
+	Practical Stack Examples: Undoing, going back to the previous page on browser, function calls, 
+	balanced braces, if opening bracket, place on stack, if closing, remove it. 
+	Infix: Traditional operations.
+	Postfix: adds operands to the stack, if it is an operator, remove two top operands from stack.

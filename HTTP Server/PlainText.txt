@@ -1,0 +1,7 @@
+This is a test to see if you can send a plain text file
+
+Across using HTTP.
+
+Your browser will automatically load a text file and interpret it
+
+as html.
